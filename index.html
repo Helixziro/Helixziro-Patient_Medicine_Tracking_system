@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Tracker - Modern UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Patient Tracking Dashboard</header>
+
+  <div class="container">
+    <form id="patientForm">
+      <input type="text" id="name" placeholder="Patient Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="disease" placeholder="Disease" required />
+      <input type="text" id="doctor" placeholder="Assigned Doctor" required />
+      <button type="submit">Add Patient</button>
+    </form>
+
+    <table id="patientTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Disease</th>
+          <th>Doctor</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Patient rows appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
